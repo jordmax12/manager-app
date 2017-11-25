@@ -41,4 +41,4 @@ const style ={
   }
 }
 
-export {Input};
+export default Input;

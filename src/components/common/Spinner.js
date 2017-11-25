@@ -17,4 +17,4 @@ const style = {
   }
 };
 
-export {Spinner};
+export default Spinner;

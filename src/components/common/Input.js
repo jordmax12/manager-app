@@ -13,7 +13,7 @@ const Input = ({label, placeholder, value, onChangeText, secure }) => {
         onChangeText={onChangeText}
         autoCorrect={false}
         secureTextEntry={secure}
-        autoCapitalize={false}
+        autoCapitalize="none"
       />
     </View>
   );

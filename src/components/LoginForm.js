@@ -39,7 +39,7 @@ class LoginForm extends Component {
     }
   }
 
-  renderButton() {
+  renderLoginButton() {
     if(this.props.loading) {
       return (
           <Spinner size="small" />
@@ -49,6 +49,20 @@ class LoginForm extends Component {
     return (
       <Button onPress={this.onLoginPress.bind(this)}>
         Login
+      </Button>
+    );
+  }
+
+  renderRegisterButton() {
+    // if(this.props.loading) {
+    //   return (
+    //       <Spinner size="small" />
+    //   );
+    // }
+
+    return (
+      <Button>
+        Sign Up
       </Button>
     );
   }
@@ -75,7 +89,8 @@ class LoginForm extends Component {
         </CardItem>
         {this.renderError()}
         <CardItem>
-          {this.renderButton()}
+          {this.renderRegisterButton()}
+          {this.renderLoginButton()}
         </CardItem>
       </Card>
     );

@@ -8,3 +8,6 @@ export const LOGIN_USER = 'login_user';
 export const EMPLOYEE_INPUT_UPDATE = 'employee_input_update';
 export const EMPLOYEE_SAVE = 'employee_save';
 export const EMPLOYEES_FETCH_SUCCESS = 'employees_fetch_success';
+export const EMPLOYEE_SAVE_SUCCESS = 'employee_save_success';
+export const EMPLOYEE_DELETE_SUCCESS = 'employee_delete_success';
+export const CLEAR_EMPLOYEE_FORM = 'clear_employee_form';

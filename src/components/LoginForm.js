@@ -1,11 +1,6 @@
 import React, {Component} from 'react';
 import {View, Text} from 'react-native';
-// import {Card, CardItem, Button, Input} from './common';
-import Card from './common/Card';
-import CardItem from './common/CardItem';
-import Button from './common/Button';
-import Input from './common/Input';
-import Spinner from './common/Spinner'
+import {Card, CardItem, Button, Input, Spinner} from './common';
 import {emailChanged, passwordChanged, loginUser} from '../actions';
 import {connect} from 'react-redux';
 

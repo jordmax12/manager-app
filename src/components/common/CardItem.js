@@ -19,4 +19,4 @@ const style = {
   }
 }
 
-export default CardItem
+export {CardItem};

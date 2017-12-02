@@ -1,16 +1,27 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
-import CardItem from './common/CardItem';
+import { Text, TouchableWithoutFeedback, View } from 'react-native';
+import {CardItem} from './common';
+import {Actions} from 'react-native-router-flux';
 
 class ListItem extends Component {
+  onRowTap() {
+    var {employee} = this.props;
+    Actions.employeeEdit({employee});
+  }
+
   render() {
     const { name } = this.props.employee;
+
     return (
-      <CardItem>
-        <Text style={style.title}>
-          {name}
-        </Text>
-      </CardItem>
+      <TouchableWithoutFeedback onPress={this.onRowTap.bind(this)}>
+      <View>
+        <CardItem>
+          <Text style={style.title}>
+            {name}
+          </Text>
+        </CardItem>
+      </View>
+      </TouchableWithoutFeedback>
     );
   }
 };
